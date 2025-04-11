@@ -44,6 +44,7 @@ export default function Hero() {
       className="relative w-full h-auto min-h-[550px] flex items-center justify-center text-center px-4 py-16 bg-black"
     >
       <div className="relative z-20 flex flex-col-reverse md:flex-row items-center justify-between gap-10 max-w-6xl w-full bg-black/80 p-8 rounded-xl shadow-lg border border-[#16a34a] backdrop-blur-sm">
+        
         {/* Texto */}
         <div className="flex-1 text-center md:text-left animate-fade-in">
           <h2 className="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight drop-shadow-md">
@@ -68,14 +69,16 @@ export default function Hero() {
 
         {/* Robô com balão de fala tech */}
         <div className="flex-1 flex items-center justify-center relative animate-fade-in">
-          <img
-            src={roboImage}
-            alt="Robô Kaizen"
-            className="w-56 md:w-72 drop-shadow-[0_0_18px_#16a34a] animate-float"
-          />
-          <div className="absolute -top-6 md:-top-10 left-[60%] -translate-x-1/2 bg-[#0f0f0f] text-[#ffffff] px-5 py-3 rounded-xl text-sm shadow-[0_0_15px_#16a34a80] border border-[#16a34a40] font-medium tracking-wide backdrop-blur-sm">
-            Olá! Pronto(a) pra impulsionar seu projeto? 
-            <div className="absolute -bottom-2 left-[60%] md:left-8 -translate-x-1/2 w-3 h-3 bg-[#0f0f0f] rotate-45 border-l border-t border-[#16a34a40] shadow-[0_0_6px_#16a34a80]" />
+          <div className="relative">
+            <img
+              src={roboImage}
+              alt="Robô Kaizen"
+              className="w-56 md:w-72 drop-shadow-[0_0_18px_#16a34a] animate-float"
+            />
+            <div className="absolute -top-16 left-1/2 -translate-x-1/2 md:top-1/2 md:left-full md:-translate-y-1/2 md:ml-6 w-[90%] md:w-auto bg-[#0f0f0f] text-[#ffffff] px-5 py-3 rounded-xl text-sm shadow-[0_0_15px_#16a34a80] border border-[#16a34a40] font-medium tracking-wide backdrop-blur-sm">
+              Olá! Pronto(a) pra impulsionar seu projeto?
+              <div className="absolute hidden md:block left-0 -top-2 -translate-x-1/2 w-3 h-3 bg-[#0f0f0f] rotate-45 border-l border-t border-[#16a34a40] shadow-[0_0_6px_#16a34a80]" />
+            </div>
           </div>
         </div>
       </div>
