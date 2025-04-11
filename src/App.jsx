@@ -1,6 +1,5 @@
 // src/App.jsx
 // Componente principal da aplicação Kaizen Code Digital
-// Importa todos os blocos da landing page e renderiza em sequência com botão flutuante de WhatsApp
 
 import './index.css'
 import Header from './components/Header'
@@ -22,25 +21,25 @@ function App() {
       {/* Cabeçalho com logo e botão de contato */}
       <Header />
 
-      {/* Seção hero com frase de impacto e botão CTA */}
+      {/* Hero section com efeito Vanta e card destacado */}
       <Hero />
 
-      {/* Lista dos serviços da agência */}
+      {/* Seção de serviços oferecidos */}
       <Services />
 
-      {/* Galeria de projetos entregues */}
+      {/* Portfólio de projetos realizados */}
       <Portfolio />
 
-      {/* Depoimentos reais de clientes */}
+      {/* Depoimentos de clientes */}
       <Testimonials />
 
-      {/* Formulário de orçamento ou mensagem */}
+      {/* Formulário de contato */}
       <ContactForm />
 
-      {/* Rodapé com link do WhatsApp e direitos autorais */}
+      {/* Rodapé com informações finais */}
       <Footer />
 
-      {/* Botão flutuante fixo de WhatsApp */}
+      {/* Botão flutuante do WhatsApp */}
       <WhatsAppButton />
     </div>
   )
