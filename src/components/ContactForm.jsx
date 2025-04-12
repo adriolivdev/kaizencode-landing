@@ -27,7 +27,7 @@ export default function ContactForm() {
           <form
             action="https://formsubmit.co/kaizencodedigital@gmail.com" 
             method="POST"
-            className="space-y-4 mb-6"
+            className="space-y-4 mb-6" onSubmit={() => alert('Mensagem enviada com sucesso! Obrigado pelo contato. Em breve entraremos em contato com você.')}
           >
             <input
               type="text"
