@@ -9,24 +9,24 @@ import { FaQuoteLeft } from 'react-icons/fa'
 export default function Testimonials() {
   const depoimentos = [
     {
-      nome: 'Fernanda Alves',
+      nome: 'Adriana Silva- Espetos Braway| Curitiba-PR',
       texto: 'A Kaizen transformou totalmente nossa presença online! Profissionalismo e atenção em cada detalhe.',
-      imagem: '/cliente1.jpg',
+      imagem: '/testimonials-image/braway-espetos.jpg',
     },
     {
-      nome: 'João da YuriSoundCar',
+      nome: 'Juliandeson Freitas - Yuri SoundCar| Araquari-SC',
       texto: 'Nosso site ficou incrível e as automações facilitaram muito nosso atendimento.',
-      imagem: '/cliente2.jpg',
+      imagem: '/testimonials-image/yuri-soundcar.jpg',
     },
     {
-      nome: 'Camila Duarte',
+      nome: 'Camila Duarte - Camila Estética| Joinville-SC',
       texto: 'Fiquei impressionada com a agilidade e a criatividade da equipe! Super recomendo o trabalho da Kaizen.',
-      imagem: '/cliente3.jpg',
+      imagem: '/testimonials-image/Camila.jpg',
     },
     {
-      nome: 'Ricardo Moreira',
+      nome: 'Ricardo Moreira - Ricardo Móveis| Joinville-SC',
       texto: 'A gestão das redes sociais fez nossa marca crescer muito em pouco tempo. Atendimento excelente!',
-      imagem: '/cliente4.jpg',
+      imagem: '/testimonials-image/ricardo.jpg',
     },
   ]
 

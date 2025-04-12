@@ -12,31 +12,31 @@ export default function Services() {
       nome: 'Criação de Sites',
       descricao: 'Sites modernos, responsivos e personalizados.',
       icone: <FaGlobe size={32} className="text-[#16a34a] mb-3" />, // verde Kaizen
-      imagem: '/images/servicos/sites.jpg',
+      imagem: '/services-image/sites-image-services.png',
     },
     {
       nome: 'Design Gráfico',
       descricao: 'Identidade visual, logotipos e criativos para redes sociais.',
       icone: <FaPaintBrush size={32} className="text-[#16a34a] mb-3" />, // verde Kaizen
-      imagem: '/images/servicos/design.jpg',
+      imagem: '/services-image/designGrafico-services.png',
     },
     {
       nome: 'Automação de Processos',
       descricao: 'Automatizamos tarefas para ganho de tempo e produtividade.',
       icone: <FaRobot size={32} className="text-[#16a34a] mb-3" />, // verde Kaizen
-      imagem: '/images/servicos/automacao.jpg',
+      imagem: '/services-image/automacaoProcessos-services.png',
     },
     {
       nome: 'Chatbots Inteligentes',
       descricao: 'Atendimento automático via WhatsApp, Instagram e sites.',
       icone: <FaComments size={32} className="text-[#16a34a] mb-3" />, // verde Kaizen
-      imagem: '/images/servicos/chatbot.jpg',
+      imagem: '/services-image/chatbot-services.png',
     },
     {
       nome: 'Social Media',
       descricao: 'Gestão de conteúdo com foco em engajamento e conversão.',
       icone: <FaChartLine size={32} className="text-[#16a34a] mb-3" />, // verde Kaizen
-      imagem: '/images/servicos/social.jpg',
+      imagem: '/services-image/socialmedia-services.png',
     },
   ]
 
