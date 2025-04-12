@@ -11,7 +11,7 @@ Este é o site oficial da **Kaizen Code Digital**, uma agência especializada em
 
 ## 🌐 Acesse o site
 
-> 💻 Em breve online: [https://kaizencodedigital.com.br](https://kaizencodedigital.com.br)
+> 💻 deploy:https://kaizencode-landing.vercel.app/
 
 ---
 
