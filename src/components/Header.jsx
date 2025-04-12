@@ -10,7 +10,7 @@ import MobileMenu from './MobileMenu'
  */
 export default function Header() {
   return (
-    <header className="flex justify-between items-center p-6 border-b border-green-600 bg-black sticky top-0 z-50">
+    <header className="flex justify-between items-center p-6 border-b border-green-600 bg-black sticky top-0 z-[60]">
       {/* Logo e nome da empresa */}
       <div className="flex items-center gap-3">
         <img src={logo} alt="Kaizen Code Digital" className="h-10" />
@@ -40,7 +40,7 @@ export default function Header() {
       </nav>
 
       {/* Menu mobile - visível apenas em telas menores */}
-      <div className="md:hidden">
+      <div className="md:hidden mr-2">
         <MobileMenu />
       </div>
     </header>

@@ -6,6 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 /* Animação de flutuação mais alta e rápida */
 @keyframes float {
   0%, 100% {
@@ -19,3 +20,4 @@ html {
 .animate-float {
   animation: float 1.5s ease-in-out infinite;
 }
+

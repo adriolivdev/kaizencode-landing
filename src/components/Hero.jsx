@@ -51,7 +51,7 @@ export default function Hero() {
             Inovação em <span className="text-[#16a34a]">Soluções Digitais</span>
           </h2>
 
-          <div className="w-24 h-1 bg-[#16a34a] mb-6 animate-pulse rounded-full mx-auto md:mx-0"></div>
+          <div className="w-24 h-1 bg-[#ffffff] mb-6 animate-pulse rounded-full mx-auto md:mx-0"></div>
 
           <p className="text-base md:text-lg max-w-xl text-white leading-relaxed animate-fade-up delay-100">
             Criamos experiências digitais com <span className="text-[#16a34a] font-semibold">tecnologia</span>,
@@ -75,8 +75,8 @@ export default function Hero() {
               alt="Robô Kaizen"
               className="w-56 md:w-72 drop-shadow-[0_0_18px_#16a34a] animate-float"
             />
-            <div className="absolute -top-16 left-1/2 -translate-x-1/2 md:top-1/2 md:left-full md:-translate-y-1/2 md:ml-6 w-[90%] md:w-auto bg-[#0f0f0f] text-[#ffffff] px-5 py-3 rounded-xl text-sm shadow-[0_0_15px_#16a34a80] border border-[#16a34a40] font-medium tracking-wide backdrop-blur-sm">
-              Olá! Pronto(a) pra impulsionar seu projeto?
+            <div className="absolute -top-16 left-1/2 -translate-x-1/2 md:top-1/2 md:left-full md:-translate-y-1/2 md:ml-6 w-[90%] md:w-auto bg-[#0b0c0b] text-[#16a34a] px-5 py-3 rounded-xl text-sm shadow-[0_0_15px_#16a34a80] border border-[#fafffc40] font-medium tracking-wide backdrop-blur-sm">
+              Olá! Pronto(a) pra inovar sua empresa?
               <div className="absolute hidden md:block left-0 -top-2 -translate-x-1/2 w-3 h-3 bg-[#0f0f0f] rotate-45 border-l border-t border-[#16a34a40] shadow-[0_0_6px_#16a34a80]" />
             </div>
           </div>

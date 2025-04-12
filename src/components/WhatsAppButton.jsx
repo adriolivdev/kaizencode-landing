@@ -14,9 +14,9 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noreferrer"
       aria-label="Abrir conversa no WhatsApp"
-      className="fixed bottom-5 right-5 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all animate-bounce"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[9999] bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-105 transition duration-300 animate-bounce"
     >
       <FaWhatsapp size={28} />
     </a>
   )
-}
+} 

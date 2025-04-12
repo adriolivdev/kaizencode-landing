@@ -17,29 +17,16 @@ import WhatsAppButton from './components/WhatsAppButton'
  */
 function App() {
   return (
-    <div className="bg-black text-white font-sans">
-      {/* Cabeçalho com logo e botão de contato */}
+    <div className="flex flex-col min-h-screen bg-black text-white font-sans overflow-x-hidden relative">
       <Header />
-
-      {/* Hero section com efeito Vanta e card destacado */}
-      <Hero />
-
-      {/* Seção de serviços oferecidos */}
-      <Services />
-
-      {/* Portfólio de projetos realizados */}
-      <Portfolio />
-
-      {/* Depoimentos de clientes */}
-      <Testimonials />
-
-      {/* Formulário de contato */}
-      <ContactForm />
-
-      {/* Rodapé com informações finais */}
+      <main className="flex-grow">
+        <Hero />
+        <Services />
+        <Portfolio />
+        <Testimonials />
+        <ContactForm />
+      </main>
       <Footer />
-
-      {/* Botão flutuante do WhatsApp */}
       <WhatsAppButton />
     </div>
   )

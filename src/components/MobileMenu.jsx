@@ -1,5 +1,5 @@
 // src/components/MobileMenu.jsx
-// Corrigido para exibir botão de fechar visivelmente
+// Corrigido para evitar sobreposição no botão de WhatsApp e footer
 
 import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
@@ -15,7 +15,7 @@ export default function MobileMenu() {
       {/* Botão para abrir o menu - visível sempre no canto direito */}
       <button
         onClick={toggleMenu}
-        className="md:hidden text-green-500 text-2xl z-50"
+        className="md:hidden text-green-500 text-2xl z-[9999]"
         aria-label="Abrir menu"
       >
         <FaBars />
@@ -25,15 +25,15 @@ export default function MobileMenu() {
       {aberto && (
         <div
           onClick={fecharMenu}
-          className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+          className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden pointer-events-auto"
         ></div>
       )}
 
       {/* Menu lateral com botão de fechar no topo */}
       <div
-        className={`fixed top-0 right-0 h-full w-2/3 sm:w-1/2 bg-black border-l border-green-600 z-50 transform ${
-          aberto ? 'translate-x-0' : 'translate-x-full'
-        } transition-transform duration-300`}
+        className={`fixed top-0 right-0 h-full w-2/3 sm:w-1/2 bg-black border-l border-green-600 z-50 transition-transform duration-300 ${
+          aberto ? 'translate-x-0 pointer-events-auto' : 'translate-x-full pointer-events-none'
+        }`}
       >
         {/* Botão fechar (X) no topo direito do menu */}
         <div className="flex justify-end p-4">
@@ -58,4 +58,4 @@ export default function MobileMenu() {
       </div>
     </>
   )
-}
+} 
