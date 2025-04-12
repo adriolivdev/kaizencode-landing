@@ -24,25 +24,33 @@ export default function ContactForm() {
         {/* Formulário de contato e redes sociais */}
         <div className="flex-1 bg-[#0a0a0a] p-6 rounded-xl shadow-md border border-[#16a34a]/40 w-full">
           <h3 className="text-2xl font-bold text-white mb-4">Entre em contato</h3>
-          <form className="space-y-4 mb-6">
+          <form
+            action="https://formsubmit.co/kaizencodedigital@gmail.com" 
+            method="POST"
+            className="space-y-4 mb-6"
+          >
             <input
               type="text"
+              name="nome"
               placeholder="Seu nome"
               required
               className="w-full p-3 rounded bg-black text-white border border-gray-700"
             />
             <input
               type="tel"
+              name="whatsapp"
               placeholder="Seu WhatsApp (obrigatório)"
               required
               className="w-full p-3 rounded bg-black text-white border border-gray-700"
             />
             <input
               type="email"
+              name="email"
               placeholder="Seu e-mail (opcional)"
               className="w-full p-3 rounded bg-black text-white border border-gray-700"
             />
             <textarea
+              name="mensagem"
               rows="4"
               placeholder="Mensagem"
               className="w-full p-3 rounded bg-black text-white border border-gray-700"
