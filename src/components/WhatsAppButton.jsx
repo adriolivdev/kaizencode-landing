@@ -10,7 +10,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/55SEUNUMERO" // Substitua por seu número com DDD (sem + ou traços)
+      href="https://wa.link/n521dq"
       target="_blank"
       rel="noreferrer"
       aria-label="Abrir conversa no WhatsApp"

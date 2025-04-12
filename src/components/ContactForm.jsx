@@ -58,7 +58,7 @@ export default function ContactForm() {
           <div className="flex flex-col gap-2 text-sm text-gray-300">
             <span className="font-semibold text-white">Ou fale com a gente pelas redes:</span>
             <div className="flex items-center gap-4 mt-2">
-              <a href="https://wa.me/55SEUNUMERO" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-green-400 hover:underline">
+              <a href="https://wa.me/5592986120257" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-green-400 hover:underline">
                 <FaWhatsapp /> WhatsApp
               </a>
               <a href="https://instagram.com/kaizencodedigital" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-pink-400 hover:underline">
