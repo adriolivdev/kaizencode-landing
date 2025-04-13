@@ -11,7 +11,7 @@ export default function ContactForm() {
     const formData = new FormData(form);
 
     try {
-      await fetch("https://script.google.com/macros/s/AKfycbylf5xJLTusf-1WRu4y1LiBFVbhHhNfJHavznuZAVEmRY3i2JTCQ7h45CPl17jjiH84ZU/exec", {
+      await fetch("https://script.google.com/macros/s/AKfycbyhEV-b-7Lw-hi4JRmups3gik5Lg24rwi4-1_goRZsw0tE-aLChCMsFFuTnPXjJZq5C/exec", {
         method: "POST",
         mode: "no-cors",
         body: formData
