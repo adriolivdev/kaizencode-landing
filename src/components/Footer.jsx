@@ -1,27 +1,25 @@
-// src/components/Footer.jsx
-// Rodapé com direitos autorais e link para WhatsApp da empresa
+import { FaWhatsapp } from "react-icons/fa";
 
-import { FaWhatsapp } from 'react-icons/fa'
-
-/**
- * Componente de rodapé com marca, ano e contato rápido.
- */
 export default function Footer() {
-  const anoAtual = new Date().getFullYear()
+  const anoAtual = new Date().getFullYear();
 
   return (
-    <footer className="bg-black text-center text-gray-500 py-6 text-sm px-4">
-      <p>© {anoAtual} Kaizen Code Digital. Todos os direitos reservados.</p>
-      <div className="mt-2">
+    <footer className="bg-black text-gray-400 text-sm px-4 py-8 border-t border-gray-800">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        <p className="text-center md:text-left">
+          © {anoAtual} <span className="font-semibold text-white">Kaizen Code Digital</span>. Todos os direitos reservados.
+        </p>
+
         <a
-          href="https://wa.me/55SEUNUMERO" // substitua com seu número
+          href="https://wa.me/55SEUNUMERO" // substitua pelo número real
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center text-green-500 font-semibold hover:underline"
+          className="inline-flex items-center gap-2 text-green-500 hover:text-green-400 transition"
         >
-          <FaWhatsapp className="mr-2" /> Fale com a gente no WhatsApp
+          <FaWhatsapp className="text-lg" />
+          <span className="font-medium">Fale conosco via WhatsApp</span>
         </a>
       </div>
     </footer>
-  )
+  );
 }
