@@ -1,6 +1,3 @@
-// src/App.jsx
-// Componente principal da aplicação Kaizen Code Digital
-
 import './index.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -11,15 +8,11 @@ import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
 
-/**
- * Componente principal que estrutura a landing page.
- * Todos os blocos visuais estão modularizados para manutenção fácil e escalabilidade.
- */
 function App() {
   return (
-    <div className="flex flex-col min-h-screen bg-black text-white font-sans overflow-x-hidden relative">
+    <div className="font-sans overflow-x-hidden">
       <Header />
-      <main className="flex-grow">
+      <main className="flex flex-col gap-0">
         <Hero />
         <Services />
         <Portfolio />

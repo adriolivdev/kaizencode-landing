@@ -36,24 +36,28 @@ export default function Services() {
   ]
 
   return (
-    <section className="bg-[#f9f9f9] py-16 px-6 text-center" id="servicos">
-      <h3 className="text-3xl font-bold text-[#16a34a] mb-10">Nossos Serviços</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {servicos.map((servico, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-xl p-6 shadow-md border border-[#16a34a20] hover:shadow-[#16a34a40] transition-all hover:scale-105 text-gray-800 flex flex-col items-center"
-          >
-            <img
-              src={servico.imagem}
-              alt={`Imagem de ${servico.nome}`}
-              className="w-full h-40 object-cover rounded mb-4 border border-[#16a34a20]"
-            />
-            {servico.icone}
-            <h4 className="text-xl font-bold mb-2">{servico.nome}</h4>
-            <p className="text-gray-600 text-sm">{servico.descricao}</p>
-          </div>
-        ))}
+    <section id="servicos" className="scroll-mt-24 bg-[#f9f9f9] py-20 px-6 text-center">
+      <div className="max-w-6xl mx-auto">
+        <h3 className="text-3xl font-bold text-[#16a34a] mb-10">Nossos Serviços</h3>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {servicos.map((servico, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl p-6 shadow-md border border-[#16a34a20] hover:shadow-[#16a34a40] transition-all hover:scale-105 text-gray-800 flex flex-col items-center"
+            >
+              <img
+                src={servico.imagem}
+                alt={`Imagem de ${servico.nome}`}
+                loading="lazy"
+                className="w-full h-40 object-cover rounded mb-4 border border-[#16a34a20]"
+              />
+              {servico.icone}
+              <h4 className="text-xl font-bold mb-2">{servico.nome}</h4>
+              <p className="text-gray-600 text-sm">{servico.descricao}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )

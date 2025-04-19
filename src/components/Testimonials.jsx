@@ -29,26 +29,32 @@ export default function Testimonials() {
   ]
 
   return (
-    <section className="bg-[#f9f9f9] py-16 px-6" id="depoimentos">
-      <h3 className="text-3xl font-bold text-[#16a34a] text-center mb-10">Depoimentos</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-        {depoimentos.map((dep, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-xl p-6 shadow-md border border-[#16a34a20] hover:shadow-[#16a34a40] transition-all"
-          >
-            <FaQuoteLeft className="text-[#16a34a] text-3xl mb-4" />
-            <p className="text-gray-600 text-sm italic mb-4">“{dep.texto}”</p>
-            <div className="flex items-center gap-3">
-              <img
-                src={dep.imagem}
-                alt={dep.nome}
-                className="w-12 h-12 rounded-full object-cover border border-[#16a34a20]"
-              />
-              <span className="text-gray-800 font-semibold">{dep.nome}</span>
+    <section id="depoimentos" className="scroll-mt-24 bg-[#f9f9f9] py-20 px-6">
+      <div className="max-w-6xl mx-auto">
+        <h3 className="text-3xl font-bold text-[#16a34a] text-center mb-10">
+          Depoimentos
+        </h3>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+          {depoimentos.map((dep, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl p-6 shadow-md border border-[#16a34a20] hover:shadow-[#16a34a40] transition-all"
+            >
+              <FaQuoteLeft className="text-[#16a34a] text-2xl mb-4" />
+              <p className="text-gray-700 text-sm italic mb-4">“{dep.texto}”</p>
+              <div className="flex items-center gap-3">
+                <img
+                  src={dep.imagem}
+                  alt={dep.nome}
+                  loading="lazy"
+                  className="w-12 h-12 rounded-full object-cover border border-[#16a34a20]"
+                />
+                <span className="text-gray-900 font-semibold text-sm">{dep.nome}</span>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   )

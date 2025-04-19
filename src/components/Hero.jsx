@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import roboImage from "../assets/robo-kaizencode.png";
+import roboImage from "/assets/robo-kaizencode.png";
 import { FaPaperPlane } from "react-icons/fa";
 
 export default function Hero() {
@@ -19,10 +19,10 @@ export default function Hero() {
         scale: 1.0,
         scaleMobile: 1.0,
         color: 0x16a34a,
-        backgroundColor: 0xffffff, // branco total
-        points: 5.0,
-        maxDistance: 20.0,
-        spacing: 22.0,
+        backgroundColor: 0xffffff,
+        points: 6.0,
+        maxDistance: 18.0,
+        spacing: 20.0,
       });
     }
 
@@ -36,7 +36,7 @@ export default function Hero() {
       ref={vantaRef}
       className="relative w-full min-h-[650px] flex items-center justify-center text-center px-6 py-28 scroll-mt-24"
     >
-      <div className="relative z-20 max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12 bg-white/90 p-10 rounded-xl shadow-md animate-fade-in">
+      <div className="relative z-20 max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12 bg-white/80 backdrop-blur-sm p-10 rounded-xl shadow-lg border border-gray-200 animate-fade-in">
         {/* Texto principal */}
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-snug tracking-tight">
@@ -52,7 +52,7 @@ export default function Hero() {
 
           <a
             href="#formulario"
-            className="mt-8 inline-flex items-center gap-2 bg-[#16a34a] text-white font-semibold px-6 py-3 rounded-md transition-all duration-300 hover:bg-white hover:text-[#16a34a] border hover:border-[#16a34a] shadow-md hover:scale-105"
+            className="mt-8 inline-flex items-center gap-2 bg-[#16a34a] text-white font-bold px-6 py-3 rounded-md shadow-md transition duration-300 hover:bg-white hover:text-[#16a34a] border hover:border-[#16a34a] hover:scale-105"
           >
             <FaPaperPlane className="text-sm" />
             Solicitar orçamento
@@ -65,9 +65,9 @@ export default function Hero() {
             <img
               src={roboImage}
               alt="Robô Kaizen"
-              className="w-52 md:w-64 animate-float drop-shadow-md"
+              className="w-56 md:w-72 animate-float drop-shadow-md"
             />
-            <div className="absolute -top-16 md:top-1/2 md:left-full md:-translate-y-1/2 md:ml-5 left-1/2 -translate-x-1/2 w-[200px] bg-white text-[#16a34a] px-4 py-3 rounded-md text-sm shadow border border-[#16a34a30] font-medium leading-snug">
+            <div className="absolute -top-16 md:top-1/2 md:left-full md:-translate-y-1/2 md:ml-5 left-1/2 -translate-x-1/2 w-[200px] bg-white text-[#16a34a] px-4 py-2 rounded-lg text-sm shadow border border-[#16a34a30] font-medium leading-snug">
               Olá! Pronto(a) pra <br />
               inovar sua empresa?
               <div className="absolute hidden md:block left-0 -top-2 -translate-x-1/2 w-3 h-3 bg-white rotate-45 border-l border-t border-[#16a34a30]" />

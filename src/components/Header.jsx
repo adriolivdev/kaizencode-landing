@@ -1,7 +1,7 @@
 // src/components/Header.jsx
 // Cabeçalho fixo com logo, menu desktop e menu hambúrguer mobile
 
-import logo from '../assets/logo-kaizen-code.jpg' // Imagem do logotipo da empresa
+import logo from '/assets/logo-kaizen-code.jpg' // Imagem do logotipo da empresa
 import MobileMenu from './MobileMenu'
 
 /**

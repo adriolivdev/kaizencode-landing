@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import roboContact from "/src/assets/robo-kaizen-contact.png";
+import roboContact from "/assets/robo-kaizen-contact.png";
 import { FaWhatsapp, FaInstagram, FaFacebookF } from "react-icons/fa";
 
 export default function ContactForm() {
@@ -26,14 +26,14 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="formulario" className="bg-[#f9f9f9] py-20 px-6">
+    <section id="formulario" className="scroll-mt-24 bg-[#f9f9f9] py-20 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
-        {/* Robô com balão */}
         <div className="flex-1 flex justify-center md:justify-start relative">
           <div className="relative flex items-center gap-4">
             <img
               src={roboContact}
               alt="Robô Kaizen"
+              loading="lazy"
               className="w-56 md:w-72 animate-float drop-shadow-md"
             />
             <div className="relative bg-white text-[#16a34a] px-4 py-2 rounded-lg text-sm shadow-md border border-[#16a34a30] max-w-[180px] leading-snug font-medium">
@@ -43,7 +43,6 @@ export default function ContactForm() {
           </div>
         </div>
 
-        {/* Formulário */}
         <div className="flex-1 bg-white p-8 rounded-xl shadow-md border border-gray-200 w-full">
           <h3 className="text-2xl font-bold text-gray-800 mb-6">Entre em contato</h3>
 
