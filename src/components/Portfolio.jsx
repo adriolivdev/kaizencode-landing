@@ -18,6 +18,12 @@ export default function Portfolio() {
       imagem: '/assets/topInstalacoes.png',
       link: 'https://topinstalacoes-landing.vercel.app',
     },
+    {
+      nome: 'LarIdeal Imóveis - Landing Page',
+      descricao: 'Site para imobiliária com busca de imóveis e formulário de contato.',
+      imagem: '/assets/larIdeal.png', // adicione essa imagem à pasta /public/assets/
+      link: 'https://larideal-imoveis-landing.vercel.app/',
+    },
   ]
 
   return (
